@@ -1,0 +1,24 @@
+.radioselect__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    width: 300px;
+    position: relative;
+    top: 3%;
+}
+
+.icons__box {
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons__box>p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.active_category {
+    border-bottom: 2px solid #37adbf;
+}

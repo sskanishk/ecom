@@ -1,0 +1,24 @@
+.dropdown-select {
+    cursor: pointer;
+    width: 130px;
+    padding: 8px 0px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.dropdown__heading {
+    margin: 0px;
+    color: gray;
+}
+
+.dropdown__wrapper {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+}
+
+.dropdown-select {
+    background: transparent;
+}
