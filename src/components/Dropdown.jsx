@@ -3,7 +3,7 @@ import "../assets/stylesheet/dropdown.css"
 
 function Dropdown({handleCategoryFilter}) {
     const options = [
-        { label: 'Select', value: '' },
+        { label: 'All', value: '' },
         { label: 'Clothes', value: 'Clothes' },
         { label: 'Shoes', value: 'Shoes' },
         { label: 'Electronics', value: 'Electronics' },
