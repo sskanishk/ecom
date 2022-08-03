@@ -8,6 +8,7 @@ import SearchBar from './components/SearchBar'
 import Grid from './components/Grid'
 
 import store from "./data/store.json"
+import EmptyState from './components/EmptyState'
 
 function App() {
 
@@ -83,7 +84,7 @@ function App() {
       {
         imageData.length > 0 
         ? <Grid data={imageData} /> 
-        : "No data found"
+        : <EmptyState />
       }
       </div>
 

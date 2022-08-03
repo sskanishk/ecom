@@ -1,9 +1,16 @@
+import { useEffect, useRef } from "react"
 import "../assets/stylesheet/searchbar.css"
 
 function SearchBar({filterQuery, handleSearchFilter}) {
+    const InputRef = useRef(null)
+
+    useEffect(() => {
+        InputRef.current.focus()
+    },[])
+
     return (
         <div className="searchbar">
-            <input id="searchqueryinput" type="text" name="searchqueryinput" placeholder="Search" value={filterQuery} onChange={(e) => {
+            <input ref={InputRef} id="searchqueryinput" type="text" name="searchqueryinput" placeholder="Search" value={filterQuery} onChange={(e) => {
                 handleSearchFilter(e.target.value)
             }}/>
             <button id="searchquerysubmit" type="submit" name="searchquerysubmit">
