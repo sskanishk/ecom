@@ -5,9 +5,8 @@ import Dropdown from './components/Dropdown'
 import RadioSelect from './components/RadioSelect'
 import RangeSlider from './components/RangeSlider'
 import SearchBar from './components/SearchBar'
+import Grid from './components/Grid'
 
-import data1 from "./data/chritsmas.json"
-import data2 from "./data/mix.json"
 import store from "./data/store.json"
 
 function App() {
@@ -83,7 +82,7 @@ function App() {
       </div>
       {
         imageData.length > 0 
-        ? <Carousel data={imageData} /> 
+        ? <Grid data={imageData} /> 
         : "No data found"
       }
       </div>
